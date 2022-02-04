@@ -1,3 +1,16 @@
+### Notes for TTS
+
+This solution was developed using Node v17.3.1
+
+The files modified were this README and `/api/managed-records.js`.
+
+Tests can be run after installing the node modules using the commands below:
+
+```
+yarn install
+yarn test
+```
+
 # Fetch
 
 At Ad Hoc, our front-end applications often exchange JSON data with various RESTful APIs. We use modern JavaScript
