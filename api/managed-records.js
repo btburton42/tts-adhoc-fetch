@@ -20,12 +20,12 @@ const getOpenItems = (res) => {
 
 const getClosedItemCount = (res) => res.filter(item => item.disposition === 'closed' && PRIMARY_COLORS.includes(item.color)).length;
 
-const getPrevNextPage = ((currentPage, res) => {
+const getPrevNextPage = (currentPage, res) => {
   return {
     previousPage: currentPage === 1 ? null : currentPage - 1,
     nextPage: (currentPage >= MAXPAGE || res.length < 10) ? null : currentPage + 1
   };
-})
+};
 
 const transformResponse = (res, currentPage) => {
   return {
